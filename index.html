@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="XieZhiFeng" />
+
+
+    
+    
+
+
+<meta name="description" content="C++">
+<meta property="og:type" content="website">
+<meta property="og:title" content="boke">
+<meta property="og:url" content="http://xie99.me/index.html">
+<meta property="og:site_name" content="boke">
+<meta property="og:description" content="C++">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="XieZhiFeng">
+<meta name="twitter:card" content="summary">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="boke" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+    <style> .article { opacity: 0;} </style>
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>boke</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: true,
+        isPost: false,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: 
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/"></a></h1>
+        </hgroup>
+
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页"></a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页"></a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-docker使用" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/04/docker%E4%BD%BF%E7%94%A8/" class="article-date">
+      <time datetime="2022-04-04T12:53:43.000Z" itemprop="datePublished">2022-04-04</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/04/docker%E4%BD%BF%E7%94%A8/">docker使用</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>1.使用Dockerfile创建镜像</p>
+<p>新建Dockerfile</p>
+<p>输入</p>
+<p>FROM centos:7</p>
+<p>ADD index.html index.html #复制文件</p>
+<p>生成镜像</p>
+<p>docker build -t nginx . #最后加点表示当前目录</p>
+<p>dokcer image ls</p>
+<p>运行镜像容器</p>
+<p>dokcer run -d -i –name cotainer nginx</p>
+<p>进入容器</p>
+<p>docker exec -it container bash</p>
+<p>退出容器</p>
+<p>exit</p>
+<p>查看运行中容器</p>
+<p>docker ps -a</p>
+<p>查看镜像</p>
+<p>docker image ls</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="解决git@github.com-Permission" class="article article-type-解决git@github.com" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/04/Permission/" class="article-date">
+      <time datetime="2022-04-04T12:19:17.000Z" itemprop="datePublished">2022-04-04</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/04/Permission/">Permission</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>客户端生成ssh key</p>
+<p>ssh-keygen -t rsa -C “<a href="mailto:&#52;&#x37;&#48;&#56;&#49;&#50;&#x30;&#x38;&#55;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#52;&#x37;&#48;&#56;&#49;&#50;&#x30;&#x38;&#55;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;</a>“<br>然后再终端下执行命令：</p>
+<p>ssh -v <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;</a></p>
+<p>在终端再执行以下命令</p>
+<p>ssh-agent -s </p>
+<p>接着在执行</p>
+<p>ssh-add ~/.ssh/id_rsa</p>
+<p>出现Could not open a connection to your authentication agent.<br>这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa这个命令就没问题了。</p>
+<p>配置服务端<br>打开你刚刚生成的id_rsa.pub，将里面的内容复制，进入你的github账号，在settings下，SSH and GPG keys下new SSH key，然后将id_rsa.pub里的内容复制到Key中，完成后Add SSH Key。</p>
+<p>验证Key<br>ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;">&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;</a> </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-LINK1000" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/04/LINK1000/" class="article-date">
+      <time datetime="2022-04-04T12:18:23.000Z" itemprop="datePublished">2022-04-04</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/04/LINK1000/">LINK1000</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>今天在调试工程的时候发现，Debug模式下运行正常。但是转到Release后就会出现以下错误：</p>
+<p>LNK1000  Internal error during IMAGE::Pass1<br>各种搜索之后，得到解决方法。方法如下：</p>
+<ul>
+<li>在工程属性页面 -&gt; 配置属性 -&gt; C/C++ -&gt; 优化   中会有全程序优化这一选项：在这里点击“否”。点击应用，确定即可。</li>
+</ul>
+<p>注：在配置中要选择“Release”</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-hexojiaocheng" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/04/hexojiaocheng/" class="article-date">
+      <time datetime="2022-04-04T12:16:41.000Z" itemprop="datePublished">2022-04-04</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/04/hexojiaocheng/">hexojiaocheng</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h1><p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
+<p>教程分三个部分，</p>
+<p>第一部分：hexo的初级搭建还有部署到github page上，以及个人域名的绑定。<br>第二部分：hexo的基本配置，更换主题，实现多终端工作，以及在coding page部署实现国内外分流<br>第三部分：hexo添加各种功能，包括搜索的SEO，阅读量统计，访问量统计和评论系统等。</p>
+<h1 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h1><p>hexo的初级搭建还有部署到github page上，以及个人域名的绑定。</p>
+<h1 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h1><ol>
+<li>安装Git</li>
+</ol>
+<p>windows：到git官网上下载,Download git,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。</p>
+<p>linux：对linux来说实在是太简单了，因为最早的git就是在linux上编写的，只需要一行代码</p>
+<p>sudo apt-get install git</p>
+<ol start="2">
+<li>安装nodejs<br>Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具。</li>
+</ol>
+<p>windows：nodejs选择LTS版本就行了。</p>
+<p>linux：</p>
+<p>sudo apt-get install nodejs<br>sudo apt-get install npm<br>安装完后，打开命令行</p>
+<p>node -v<br>npm -v<br>检查一下有没有安装成功</p>
+<p>顺便说一下，windows在git安装完后，就可以直接使用git bash来敲命令行了，不用自带的cmd，cmd有点难用。</p>
+<ol start="3">
+<li>安装hexo<br>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后cd到这个文件夹下（或者在这个文件夹下直接右键git bash打开）。</li>
+</ol>
+<p>输入命令</p>
+<p>npm install -g hexo-cli<br>依旧用hexo -v查看一下版本</p>
+<p>至此就全部安装完了。</p>
+<p>接下来初始化一下hexo</p>
+<p>hexo init myblog<br>这个myblog可以自己取什么名字都行，然后</p>
+<p>cd myblog //进入这个myblog文件夹<br>npm install<br>新建完成后，指定文件夹目录下有：</p>
+<p>node_modules: 依赖包<br>public：存放生成的页面<br>scaffolds：生成文章的一些模板<br>source：用来存放你的文章<br>themes：主题<br>** _config.yml: 博客的配置文件**<br>hexo g<br>hexo server<br>打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。</p>
+<ol start="4">
+<li>GitHub创建个人仓库</li>
+</ol>
+<p>创建一个和你用户名相同的仓库，后面加.<a target="_blank" rel="noopener" href="http://github.io,只有这样,将来要部署到github/">http://github.io，只有这样，将来要部署到GitHub</a> page的时候，才会被识别，也就是<a target="_blank" rel="noopener" href="http://xxxx.github.io,其中xxx就是你注册github的用户名./">http://xxxx.github.io，其中xxx就是你注册GitHub的用户名。</a></p>
+<ol start="5">
+<li>生成SSH添加到GitHub<br>回到你的git bash中，</li>
+</ol>
+<p>git config –global user.name “yourname”<br>git config –global user.email “youremail”<br>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
+<p>可以用以下两条，检查一下你有没有输对</p>
+<p>git config user.name<br>git config user.email<br>然后创建SSH,一路回车</p>
+<p>ssh-keygen -t rsa -C “youremail”<br>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。</p>
+<ol start="6">
+<li>将hexo部署到GitHub<br>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为 YourgithubName就是你的GitHub账户</li>
+</ol>
+<p>deploy:<br>  type: git<br>  repo: <a target="_blank" rel="noopener" href="https://github.com/YourgithubName/YourgithubName.github.io.git">https://github.com/YourgithubName/YourgithubName.github.io.git</a><br>  branch: master<br>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
+<p>npm install hexo-deployer-git –save<br>然后</p>
+<p>hexo clean<br>hexo generate<br>hexo deploy<br>其中 hexo clean清除了你之前生成的东西，也可以不加。 hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写 hexo deploy 部署文章，可以用hexo d缩写</p>
+<p>注意deploy时可能要你输入username和password。</p>
+<p>得到下图就说明部署成功了，过一会儿就可以在<a target="_blank" rel="noopener" href="http://yourname.github.io/">http://yourname.github.io</a> 这个网站看到你的博客了！！</p>
+<ol start="7">
+<li>设置个人域名<br>现在你的个人网站的地址是 yourname.github.io，如果觉得这个网址逼格不太够，这就需要你设置个人域名了。但是需要花钱。</li>
+</ol>
+<p>注册一个阿里云账户,在阿里云上买一个域名，我买的是 fangzh.top，各个后缀的价格不太一样，比如最广泛的.com就比较贵，看个人喜好咯。</p>
+<p>你需要先去进行实名认证,然后在域名控制台中，看到你购买的域名。</p>
+<p>点解析进去，添加解析。</p>
+<p>登录GitHub，进入之前创建的仓库，点击settings，设置Custom domain，输入你的域名fangzh.top</p>
+<p>然后在你的博客文件source中创建一个名为CNAME文件，不要后缀。写上你的域名。</p>
+<p>最后，在gitbash中，输入</p>
+<p>hexo clean<br>hexo g<br>hexo d<br>过不了多久，再打开你的浏览器，输入你自己的域名，就可以看到搭建的网站啦！</p>
+<p>接下来你就可以正式开始写文章了。</p>
+<p>hexo new newpapername<br>然后在source/_post中打开markdown文件，就可以开始编辑了。当你写完的时候，再</p>
+<p>hexo clean<br>hexo g<br>hexo d</p>
+<p>第二部分<br>hexo的基本配置，更换主题，实现多终端工作，以及在coding page部署实现国内外分流。</p>
+<ol>
+<li>hexo基本配置</li>
+</ol>
+<p>在文件根目录下的_config.yml，就是整个hexo框架的配置文件了。可以在里面修改大部分的配置。详细可参考官方的配置描述。</p>
+<p>网站<br>参数描述title网站标题subtitle网站副标题description网站描述author您的名字language网站使用的语言timezone网站时区。Hexo 默认使用您电脑的时区。时区列表。比如说：America/New_York, Japan, 和 UTC 。</p>
+<p>其中，description主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。author参数用于主题显示文章的作者。</p>
+<p>网址<br>参数描述url网址root网站根目录permalink文章的 永久链接 格式permalink_defaults永久链接中各部分的默认值</p>
+<p>在这里，你需要把url改成你的网站域名。</p>
+<p>permalink，也就是你生成某个文章时的那个链接格式。</p>
+<p>比如我新建一个文章叫temp.md，那么这个时候他自动生成的地址就是<a target="_blank" rel="noopener" href="http://yoursite.com/2018/09/05/temp%E3%80%82">http://yoursite.com/2018/09/05/temp。</a></p>
+<p>以下是官方给出的示例，关于链接的变量还有很多，需要的可以去官网上查找 永久链接 。</p>
+<p>参数结果:year/:month/:day/:title/2013/07/14/hello-world:year-:month-:day-:title.html2013-07-14-hello-world.html:category/:titlefoo/bar/hello-world</p>
+<p>再往下翻，中间这些都默认就好了。</p>
+<p>theme: landscape<br>​</p>
+<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repo: <repository url><br>  branch: [branch]<br>​<br>theme就是选择什么主题，也就是在theme这个文件夹下，在官网上有很多个主题，默认给你安装的是lanscape这个主题。当你需要更换主题时，在官网上下载，把主题的文件放在theme文件夹下，再修改这个参数就可以了。</p>
+<p>接下来这个deploy就是网站的部署的，repo就是仓库(Repository)的简写。branch选择仓库的哪个分支。这个在之前进行github page部署的时候已经修改过了，不再赘述。而这个在后面进行双平台部署的时候会再次用到。</p>
+<p>Front-matter<br>Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量，举例来说：</p>
+<p>title: Hello World<br>date: 2013/7/13 20:46:25</p>
+<hr>
+<p>下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
+<p>参数描述layout布局title标题date建立日期updated更新日期comments开启文章的评论功能tags标签（不适用于分页）categories分类（不适用于分页）permalink覆盖文章网址</p>
+<p>其中，分类和标签需要区别一下，分类具有顺序性和层次性，也就是说 Foo, Bar 不等于 Bar, Foo；而标签没有顺序和层次。</p>
+<p>categories:</p>
+<ul>
+<li>Diary<br>tags:</li>
+<li>PS3</li>
+<li>Games<br>layout（布局）<br>当你每一次使用代码</li>
+</ul>
+<p>hexo new paper<br>它其实默认使用的是post这个布局，也就是在source文件夹下的_post里面。</p>
+<p>Hexo 有三种默认布局：post、page 和 draft，它们分别对应不同的路径，而您自定义的其他布局和 post 相同，都将储存到 source/_posts 文件夹。</p>
+<p>布局路径postsource/_postspagesourcedraftsource/_drafts</p>
+<p>而new这个命令其实是：</p>
+<p>hexo new [layout] <title><br>只不过这个layout默认是post罢了。</p>
+<p>page<br>如果你想另起一页，那么可以使用</p>
+<p>hexo new page board<br>系统会自动给你在source文件夹下创建一个board文件夹，以及board文件夹中的index.md，这样你访问的board对应的链接就是<a target="_blank" rel="noopener" href="http://xxx.xxx/board">http://xxx.xxx/board</a></p>
+<p>draft<br>draft是草稿的意思，也就是你如果想写文章，又不希望被看到，那么可以</p>
+<p>hexo new draft newpage<br>这样会在source/_draft中新建一个newpage.md文件，如果你的草稿文件写的过程中，想要预览一下，那么可以使用</p>
+<p>hexo server –draft<br>在本地端口中开启服务预览。</p>
+<p>如果你的草稿文件写完了，想要发表到post中，</p>
+<p>hexo publish draft newpage<br>就会自动把newpage.md发送到post中。</p>
+<ol start="2">
+<li>更换主题<br>到这一步，如果你觉得默认的landscape主题不好看，那么可以在官网的主题中，选择你喜欢的一个主题进行修改就可以啦。<br>这里有200多个主题可以选。不过最受欢迎的就是那么几个，比如NexT主题，非常的简洁好看，大多数人都选择这个，关于这个的教程也比较多。不过我选择的是hueman这个主题，好像是从WordPress移植过来的.</li>
+</ol>
+<p>直接在github链接上下载下来，然后放到theme文件夹下就行了，然后再在刚才说的配置文件中把theme换成那个主题文件夹的名字，它就会自动在theme文件夹中搜索你配置的主题。</p>
+<p>而后进入hueman这个文件夹，可以看到里面也有一个配置文件_config.xml，貌似它默认是_config.xml.example，把它复制一份，重命名为_config.xml就可以了。这个配置文件是修改你整个主题的配置文件。</p>
+<p>menu（菜单栏）<br>也就是上面菜单栏上的这些东西。</p>
+<p>其中，About这个你是找不到网页的，因为你的文章中没有about这个东西。如果你想要的话，可以执行命令</p>
+<p>hexo new page about<br>它就会在根目录下source文件夹中新建了一个about文件夹，以及index.md，在index.md中写上你想要写的东西，就可以在网站上展示出来了。</p>
+<p>如果你想要自己再自定义一个菜单栏的选项，那么就</p>
+<p>hexo new page yourdiy<br>然后在主题配置文件的menu菜单栏添加一个 Yourdiy : /yourdiy，注意冒号后面要有空格，以及前面的空格要和menu中默认的保持整齐。然后在languages文件夹中，找到zh-CN.yml，在index中添加yourdiy: ‘中文意思’就可以显示中文了。</p>
+<p>customize(定制)<br>在这里可以修改你的个人logo，默认是那个hueman，在source/css/images文件夹中放入自己要的logo，再改一下url的链接名字就可以了。</p>
+<p>favicon是网站中出现的那个小图标的icon，找一张你喜欢的logo，然后转换成ico格式，放在images文件夹下，配置一下路径就行。</p>
+<p>social_links ，可以显示你的社交链接，而且是有logo的。</p>
+<p>tips:</p>
+<p>在这里可以添加一个rss功能，也就是那个符号像wifi一样的东西。</p>
+<p>添加RSS</p>
+<ol>
+<li>什么是RSS？</li>
+</ol>
+<p>RSS也就是订阅功能，你可以理解为类似与订阅公众号的功能，来订阅各种博客，杂志等等。</p>
+<ol start="2">
+<li>为什么要用RSS？</li>
+</ol>
+<p>就如同订阅公众号一样，你对某个公众号感兴趣，你总不可能一直时不时搜索这个公众号来看它的文章吧。博客也是一样，如果你喜欢某个博主，或者某个平台的内容，你可以通过RSS订阅它们，然后在RSS阅读器上可以实时推送这些消息。现在网上的垃圾消息太多了，如果你每一天都在看这些消息中度过，漫无目的的浏览，只会让你的时间一点一点的流逝，太不值得了。如果你关注的博主每次都发的消息都是精华，而且不是每一天十几条几十条的轰炸你，那么这个博主就值得你的关注，你就可以通过RSS订阅他。</p>
+<p>在我的理解中，如果你不想每天都被那些没有质量的消息轰炸，只想安安静静的关注几个博主，每天看一些有质量的内容也不用太多，那么RSS订阅值得你的拥有。</p>
+<ol start="3">
+<li>添加RSS功能</li>
+</ol>
+<p>先安装RSS插件</p>
+<p>npm i hexo-generator-feed<br>而后在你整个项目的_config.yml中找到Extensions，添加：</p>
+<h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-https-hexo-io-plugins"><a href="#Plugins-https-hexo-io-plugins" class="headerlink" title="Plugins: https://hexo.io/plugins/"></a>Plugins: <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></h2><p>#RSS订阅<br>plugin:</p>
+<ul>
+<li>hexo-generator-feed<br>#Feed Atom<br>feed:<br>type: atom<br>path: atom.xml<br>limit: 20<br>这个时候你的RSS链接就是 域名/atom.xml了。</li>
+</ul>
+<p>所以，在主题配置文件中的这个social links，开启RSS的页面功能，这样你网站上就有那个像wifi一样符号的RSS logo了，注意空格。</p>
+<p>rss: /atom.xml<br>4. 如何关注RSS？</p>
+<p>首先，你需要一个RSS阅读器，在这里我推荐inoreader，宇宙第一RSS阅读器，而且中文支持的挺好。不过它没有PC端的程序，只有网页版，chrome上有插件。在官网上用google账号或者自己注册账号登录，就可以开始你的关注之旅了。</p>
+<p>每次需要关注某个博主时，就点开他的RSS链接，把链接复制到inoreader上，就能关注了，当然，如果是比较大众化的很厉害的博主，你直接搜名字也可以的，比如每个人都非常佩服的阮一峰大师，直接在阅读器上搜索阮一峰，应该就能出来了。</p>
+<p>我关注的比如，阮一峰的网络日志，月光博客，知乎精选等，都很不错。当然，还有我！！赶快关注我吧！你值得拥有：<a target="_blank" rel="noopener" href="http://fangzh.top/atom.xml">http://fangzh.top/atom.xml</a></p>
+<p>在安卓端，inoreader也有下载，不过因为国内google是登录不了的，你需要在inoreader官网上把你的密码修改了，然后就可以用账户名和密码登录了。</p>
+<p>在IOS端，没用过，好像是reader 3可以支持inoreader账户，还有个readon也不错，可以去试试。</p>
+<p>widgets(侧边栏)<br>侧边栏的小标签，如果你想自己增加一个，比如我增加了一个联系方式，那么我把communication写在上面，在zh-CN.yml中的sidebar，添加communication: ‘中文’。</p>
+<p>然后在hueman/layout/widget中添加一个communicaiton.ejs，填入模板：</p>
+<p>&lt;% if (site.posts.length) { %&gt;<br>    <div class="widget-wrap widget-list"><br>        <h3 class="widget-title">&lt;%= __(‘sidebar.communiation’) %&gt;</h3><br>        <div class="widget"><br>            <!--这里添加你要写的内容--><br>        </div><br>    </div><br>&lt;% } %&gt;</p>
+<p>search(搜索框)<br>默认搜索框是不能够用的，</p>
+<p>you need to install hexo-generator-json-content before using Insight Search<br>它已经告诉你了，如果想要使用，就安装这个插件。</p>
+<ol start="3">
+<li>git分支进行多终端工作<br>问题来了，如果你现在在自己的笔记本上写的博客，部署在了网站上，那么你在家里用台式机，或者实验室的台式机，发现你电脑里面没有博客的文件，或者要换电脑了，最后不知道怎么移动文件，怎么办？</li>
+</ol>
+<p>在这里我们就可以利用git的分支系统进行多终端工作了，这样每次打开不一样的电脑，只需要进行简单的配置和在github上把文件同步下来，就可以无缝操作了。</p>
+<p>机制<br>机制是这样的，由于hexo d上传部署到github的其实是hexo编译后的文件，是用来生成网页的，不包含源文件。</p>
+<p>也就是上传的是在本地目录里自动生成的.deploy_git里面。</p>
+<p>其他文件 ，包括我们写在source 里面的，和配置文件，主题文件，都没有上传到github</p>
+<p>所以可以利用git的分支管理，将源文件上传到github的另一个分支即可。</p>
+<p>上传分支<br>首先，先在github上新建一个hexo分支。然后在这个仓库的settings中，选择默认分支为hexo分支（这样每次同步的时候就不用指定分支，比较方便）。<br>然后在本地的任意目录下，打开git bash，</p>
+<p>git clone <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#x63;&#111;&#x6d;</a>:ZJUFangzh/ZJUFangzh.github.io.git<br>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p>
+<p>接下来在克隆到本地的ZJUFangzh.github.io中，把除了.git 文件夹外的所有文件都删掉</p>
+<p>把之前我们写的博客源文件全部复制过来，除了.deploy_git。这里应该说一句，复制过来的源文件应该有一个.gitignore，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p>
+<p>.DS_Store<br>Thumbs.db<br>db.json<br><em>.log<br>node_modules/<br>public/<br>.deploy</em>/<br>注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
+<p>而后</p>
+<p>git add .<br>git commit –m “add branch”<br>git push<br>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中node_modules、public、db.json已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p>
+<p>这样就上传完了。</p>
+<p>更换电脑操作<br>一样的，跟之前的环境搭建一样，</p>
+<p>安装git<br>sudo apt-get install git<br>设置git全局邮箱和用户名<br>git config –global user.name “yourgithubname”<br>git config –global user.email “yourgithubemail”<br>设置ssh key<br>ssh-keygen -t rsa -C “youremail”<br>#生成后填到github和coding上（有coding平台的话）<br>#验证是否成功<br>ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a><br>ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#105;&#116;&#46;&#x63;&#x6f;&#100;&#105;&#x6e;&#103;&#46;&#x6e;&#x65;&#116;">&#103;&#x69;&#116;&#64;&#x67;&#105;&#116;&#46;&#x63;&#x6f;&#100;&#105;&#x6e;&#103;&#46;&#x6e;&#x65;&#116;</a> #(有coding平台的话)<br>安装nodejs<br>sudo apt-get install nodejs<br>sudo apt-get install npm<br>安装hexo<br>sudo npm install hexo-cli -g<br>但是已经不需要初始化了，</p>
+<p>直接在任意文件夹下，</p>
+<p>git clone git@………………<br>然后进入克隆到的文件夹：</p>
+<p>cd xxx.github.io<br>npm install<br>npm install hexo-deployer-git –save<br>生成，部署：</p>
+<p>hexo g<br>hexo d</p>
+<p>然后就可以开始写你的新博客了</p>
+<p>hexo new newpage</p>
+<p>Tips:</p>
+<p>不要忘了，每次写完最好都把源文件上传一下<br>git add .<br>git commit –m “xxxx”<br>git push<br>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了<br>git pull</p>
+<p>第三部分<br>hexo添加各种功能，包括搜索的SEO，阅读量统计，访问量统计和评论系统等。</p>
+<p>这一部分参考了: visugar.com这里面说的很详细了。</p>
+<ol>
+<li>SEO优化<br>推广是很麻烦的事情，怎么样别人才能知道我们呢，首先需要让搜索引擎收录你的这个网站，别人才能搜索的到。那么这就需要SEO优化了。</li>
+</ol>
+<p>SEO是由英文Search Engine Optimization缩写而来， 中文意译为“搜索引擎优化”。SEO是指通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化。<br>百度seo<br>刚建站的时候是没有搜索引擎收录我们的网站的。可以在搜索引擎中输入site:&lt;域名&gt;</p>
+<p>来查看一下。</p>
+<ol>
+<li>登录百度站长平台添加网站</li>
+</ol>
+<p>登录百度站长平台，在站点管理中添加你自己的网站。</p>
+<p>验证网站有三种方式：文件验证、HTML标签验证、CNAME验证。</p>
+<p>第三种方式最简单，只要将它提供给你的那个xxxxx使用CNAME解析到<a target="_blank" rel="noopener" href="http://xxx.baidu.com就可以了.也就是登录你的阿里云,把这个解析填进去就ok了./">http://xxx.baidu.com就可以了。也就是登录你的阿里云，把这个解析填进去就OK了。</a></p>
+<ol start="2">
+<li>提交链接</li>
+</ol>
+<p>我们需要使用npm自动生成网站的sitemap，然后将生成的sitemap提交到百度和其他搜索引擎</p>
+<p>npm install hexo-generator-sitemap –save<br>npm install hexo-generator-baidu-sitemap –save<br>这时候你需要在你的根目录下_config.xml中看看url有没有改成你自己的：</p>
+<p>重新部署后，就可以在public文件夹下看到生成的sitemap.xml和baidusitemap.xml了。</p>
+<p>然后就可以向百度提交你的站点地图了。</p>
+<p>这里建议使用自动提交。</p>
+<p>自动提交又分为三种：主动推送、自动推送、sitemap。</p>
+<p>可以三个一起提交不要紧，我选择的是后两种。</p>
+<p>自动推送：把百度生成的自动推送代码，放在主题文件/layout/common/head.ejs的适当位置，然后验证一下就可以了。<br>sitemap：把两个sitemap地址，提交上去，看到状态正常就OK了。<br>google的SEO</p>
+<p>流程一样，google更简单，而且收录更快，进入google站点地图，提交网站和sitemap.xml，就可以了。</p>
+<p>如果你这个域名在google这里出了问题，那你就提交 <a target="_blank" rel="noopener" href="http://yourname.github.io,这个链接,效果是一样的./">http://yourname.github.io，这个链接，效果是一样的。</a></p>
+<p>不出意外的话一天内google就能收录你的网站了。</p>
+<ol start="3">
+<li>添加百度统计</li>
+</ol>
+<p>百度统计可以在后台上看到你网站的访问数，浏览量，浏览链接分布等很重要的信息。所以添加百度统计能更有效的让你掌握你的网站情况。</p>
+<p>百度统计，注册一下，这里的账号好像和百度账号不是一起的。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-chrome 报错 navigator.mediaDevices is undefined" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/10/15/chrome%20%E6%8A%A5%E9%94%99%20navigator.mediaDevices%20is%20undefined/" class="article-date">
+      <time datetime="2021-10-15T07:27:43.230Z" itemprop="datePublished">2021-10-15</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/10/15/chrome%20%E6%8A%A5%E9%94%99%20navigator.mediaDevices%20is%20undefined/">chrome 报错 navigator.mediaDevices is undefined</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>chrome 报错 navigator.mediaDevices is undefined<br>最近在开发一个摄像头项目（多人会议，需要摄像头~~）。然后同事的电脑调试好好的，到我这里就报错了，我的 chrome 版本一直都在最新的，为啥到我这反而还不兼容？</p>
+<p>原来是以后的内容会越来越严格<br>chrome：想调用摄像头？可以啊，拿出你的https证书给我瞧瞧</p>
+<h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><h3 id="解决方法-1"><a href="#解决方法-1" class="headerlink" title="解决方法 1"></a>解决方法 1</h3><p>通过相应参数启动 Chrome</p>
+<p>比如我们调试的链接是:<a target="_blank" rel="noopener" href="http://example.com.如果有多个网址,用,隔开/">http://example.com。如果有多个网址，用,隔开</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  --unsafely-treat-insecure-origin-as-secure=<span class="string">&quot;http://example.com&quot;</span></span><br></pre></td></tr></table></figure>
+<p>加哪里呢？<br><img src="https://img-blog.csdnimg.cn/img_convert/891a5fd80f3aee3cd6502dc056ca78ff.png" alt="1"></p>
+<h3 id="解决方法-2（比较推荐这个）"><a href="#解决方法-2（比较推荐这个）" class="headerlink" title="解决方法 2（比较推荐这个）"></a>解决方法 2（比较推荐这个）</h3><p>chrom 下<br>打开 chrome://flags/#unsafely-treat-insecure-origin-as-secure</p>
+<p>选 enabled<br>填写需要调试的 URL，多个 URL 以,隔开<br>完全重启 chrome 后起效（改了之后下面也会有个 relaunch 按钮）</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2022 XieZhiFeng
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
