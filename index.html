@@ -356,7 +356,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/04/04/Permission/">Permission</a>
+      <a class="article-title" href="/2022/04/04/Permission/">ssh连接github Permission</a>
     </h1>
   
 
@@ -367,15 +367,15 @@
       
           
         <p>客户端生成ssh key</p>
-<p>ssh-keygen -t rsa -C “<a href="mailto:&#52;&#x37;&#48;&#56;&#49;&#50;&#x30;&#x38;&#55;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#52;&#x37;&#48;&#56;&#49;&#50;&#x30;&#x38;&#55;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;</a>“<br>然后再终端下执行命令：</p>
-<p>ssh -v <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;</a></p>
+<p>ssh-keygen -t rsa -C “<a href="mailto:&#52;&#55;&#48;&#56;&#x31;&#x32;&#48;&#56;&#55;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#109;">&#52;&#55;&#48;&#56;&#x31;&#x32;&#48;&#56;&#55;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#109;</a>“<br>然后再终端下执行命令：</p>
+<p>ssh -v <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#x6f;&#x6d;</a></p>
 <p>在终端再执行以下命令</p>
 <p>ssh-agent -s </p>
 <p>接着在执行</p>
 <p>ssh-add ~/.ssh/id_rsa</p>
 <p>出现Could not open a connection to your authentication agent.<br>这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa这个命令就没问题了。</p>
 <p>配置服务端<br>打开你刚刚生成的id_rsa.pub，将里面的内容复制，进入你的github账号，在settings下，SSH and GPG keys下new SSH key，然后将id_rsa.pub里的内容复制到Key中，完成后Add SSH Key。</p>
-<p>验证Key<br>ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;">&#x67;&#x69;&#116;&#64;&#103;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;</a> </p>
+<p>验证Key<br>ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;</a> </p>
 
       
     </div>
@@ -421,7 +421,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/04/04/LINK1000/">LINK1000</a>
+      <a class="article-title" href="/2022/04/04/LINK1000/">LINK1000错误</a>
     </h1>
   
 
@@ -482,7 +482,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/04/04/hexojiaocheng/">hexojiaocheng</a>
+      <a class="article-title" href="/2022/04/04/hexojiaocheng/">Hexo搭建与使用</a>
     </h1>
   
 
@@ -570,8 +570,6 @@
 <h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repo: <repository url><br>  branch: [branch]<br>​<br>theme就是选择什么主题，也就是在theme这个文件夹下，在官网上有很多个主题，默认给你安装的是lanscape这个主题。当你需要更换主题时，在官网上下载，把主题的文件放在theme文件夹下，再修改这个参数就可以了。</p>
 <p>接下来这个deploy就是网站的部署的，repo就是仓库(Repository)的简写。branch选择仓库的哪个分支。这个在之前进行github page部署的时候已经修改过了，不再赘述。而这个在后面进行双平台部署的时候会再次用到。</p>
 <p>Front-matter<br>Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量，举例来说：</p>
-<p>title: Hello World<br>date: 2013/7/13 20:46:25</p>
-<hr>
 <p>下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
 <p>参数描述layout布局title标题date建立日期updated更新日期comments开启文章的评论功能tags标签（不适用于分页）categories分类（不适用于分页）permalink覆盖文章网址</p>
 <p>其中，分类和标签需要区别一下，分类具有顺序性和层次性，也就是说 Foo, Bar 不等于 Bar, Foo；而标签没有顺序和层次。</p>
@@ -648,7 +646,7 @@
 <p>其他文件 ，包括我们写在source 里面的，和配置文件，主题文件，都没有上传到github</p>
 <p>所以可以利用git的分支管理，将源文件上传到github的另一个分支即可。</p>
 <p>上传分支<br>首先，先在github上新建一个hexo分支。然后在这个仓库的settings中，选择默认分支为hexo分支（这样每次同步的时候就不用指定分支，比较方便）。<br>然后在本地的任意目录下，打开git bash，</p>
-<p>git clone <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#x63;&#111;&#x6d;</a>:ZJUFangzh/ZJUFangzh.github.io.git<br>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p>
+<p>git clone <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#109;</a>:ZJUFangzh/ZJUFangzh.github.io.git<br>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p>
 <p>接下来在克隆到本地的ZJUFangzh.github.io中，把除了.git 文件夹外的所有文件都删掉</p>
 <p>把之前我们写的博客源文件全部复制过来，除了.deploy_git。这里应该说一句，复制过来的源文件应该有一个.gitignore，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p>
 <p>.DS_Store<br>Thumbs.db<br>db.json<br><em>.log<br>node_modules/<br>public/<br>.deploy</em>/<br>注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
@@ -656,7 +654,7 @@
 <p>git add .<br>git commit –m “add branch”<br>git push<br>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中node_modules、public、db.json已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p>
 <p>这样就上传完了。</p>
 <p>更换电脑操作<br>一样的，跟之前的环境搭建一样，</p>
-<p>安装git<br>sudo apt-get install git<br>设置git全局邮箱和用户名<br>git config –global user.name “yourgithubname”<br>git config –global user.email “yourgithubemail”<br>设置ssh key<br>ssh-keygen -t rsa -C “youremail”<br>#生成后填到github和coding上（有coding平台的话）<br>#验证是否成功<br>ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a><br>ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#105;&#116;&#46;&#x63;&#x6f;&#100;&#105;&#x6e;&#103;&#46;&#x6e;&#x65;&#116;">&#103;&#x69;&#116;&#64;&#x67;&#105;&#116;&#46;&#x63;&#x6f;&#100;&#105;&#x6e;&#103;&#46;&#x6e;&#x65;&#116;</a> #(有coding平台的话)<br>安装nodejs<br>sudo apt-get install nodejs<br>sudo apt-get install npm<br>安装hexo<br>sudo npm install hexo-cli -g<br>但是已经不需要初始化了，</p>
+<p>安装git<br>sudo apt-get install git<br>设置git全局邮箱和用户名<br>git config –global user.name “yourgithubname”<br>git config –global user.email “yourgithubemail”<br>设置ssh key<br>ssh-keygen -t rsa -C “youremail”<br>#生成后填到github和coding上（有coding平台的话）<br>#验证是否成功<br>ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#x6f;&#109;">&#x67;&#105;&#116;&#x40;&#103;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#x6f;&#109;</a><br>ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#105;&#x74;&#46;&#x63;&#111;&#100;&#x69;&#110;&#103;&#46;&#x6e;&#x65;&#116;">&#103;&#105;&#x74;&#64;&#103;&#105;&#x74;&#46;&#x63;&#111;&#100;&#x69;&#110;&#103;&#46;&#x6e;&#x65;&#116;</a> #(有coding平台的话)<br>安装nodejs<br>sudo apt-get install nodejs<br>sudo apt-get install npm<br>安装hexo<br>sudo npm install hexo-cli -g<br>但是已经不需要初始化了，</p>
 <p>直接在任意文件夹下，</p>
 <p>git clone git@………………<br>然后进入克隆到的文件夹：</p>
 <p>cd xxx.github.io<br>npm install<br>npm install hexo-deployer-git –save<br>生成，部署：</p>
