@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="XieZhiFeng" />
+
+
+    
+    
+
+
+<meta name="description" content="C++">
+<meta property="og:type" content="website">
+<meta property="og:title" content="boke">
+<meta property="og:url" content="http://xie99.me/page/2/index.html">
+<meta property="og:site_name" content="boke">
+<meta property="og:description" content="C++">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="XieZhiFeng">
+<meta name="twitter:card" content="summary">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="boke" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+    <style> .article { opacity: 0;} </style>
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>boke</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: true,
+        isPost: false,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: 
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/touxiang.jpeg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/"></a></h1>
+        </hgroup>
+
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/conda/" rel="tag">conda</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/" rel="tag">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/" rel="tag">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%9A%E8%AE%AE-EI/" rel="tag">会议 EI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%9A%E8%AE%AE-%E9%9B%B7%E8%BE%BE-%E9%81%A5%E6%84%9F/" rel="tag">会议 雷达 遥感</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E6%9C%AF%E4%BC%9A%E8%AE%AE/" rel="tag">学术会议</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%9D%E5%A1%94/" rel="tag">宝塔</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90%E3%80%81H5%E6%8C%87%E6%95%B0/" rel="tag">影响因子、H5指数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%9F%E5%88%8A%E3%80%81%E4%BC%9A%E8%AE%AE/" rel="tag">期刊、会议</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%99%8D%E9%87%8D%EF%BC%8C%E8%AE%BA%E6%96%87/" rel="tag">降重，论文</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="/xu63.cn">xu</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页"></a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/touxiang.jpeg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页"></a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-h5zhishu" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/13/h5zhishu/" class="article-date">
+      <time datetime="2022-04-13T03:32:22.000Z" itemprop="datePublished">2022-04-13</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/13/h5zhishu/">h5指数与影响因子</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>影响因子 (Impact Factor) 自从1955年由美国科学情报研究所 (Institute for Scientific Information, ISI) 创始人Eugene Garfield提出后, 在过去几十年中, 一直是衡量和评价学术期刊学术水平和影响力的一个重要指标。然而, 由于期刊影响因子自身的弊端, 以及被过度关注或被不恰当用于评价某些研究或某一科研工作者, 所以期刊影响因子近年来受到了广泛的争议。学术界急需寻找更为合理、客观的期刊评价指标。2012年, 谷歌学术推出了一个用于期刊评价的计量系统, 即谷歌学术计量 (Google Scholar Metrics)。这一评价系统中包含多个计量指标, 如:h指数 (h-index) 、h核心 (h-core) 、h5中位数 (h-median) 、h5指数 (h5-index) 、h5核心 (h5-core) 和h5中位数 (h5-median) 等。其中h5指数在一定程度上避免了影响因子的一些局限性 (如:时间跨度较短, 会受到少数超高引用论文的影响等) , 因此受到了广泛的关注。一些国内外SCI期刊已将h5指数与影响因子一起并列张贴在自己的官方网站, 作为期刊影响力的另外一个衡量指标。</p>
+<p>h5指数是基于h指数的统计方法, 主要计算期刊近5年的论文数量及相关论文被引用的次数。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90%E3%80%81H5%E6%8C%87%E6%95%B0/" rel="tag">影响因子、H5指数</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Eihuiyi" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/13/Eihuiyi/" class="article-date">
+      <time datetime="2022-04-13T03:26:17.000Z" itemprop="datePublished">2022-04-13</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/13/Eihuiyi/">如何判断论文真正被EI收录</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p> 如何判断论文真正被EI收录? 国际会议都会EI检索吗？IEEE的国际会议，EI数据库核心与非核心部分<br>有的读者在检索论文是否被EI数据库收录时，只要点开EI检索平台，不挑选数据库，就直接输入检索词，如有结果就认为文章被EI数据库收录了，其实不然。虽然有检索结果，但不一定都是被EI数据库收录，因为在“EngineeringVillage”这个检索平台上，有“Compendex（工程索引）”和“Inspec（英国科学文摘）”两个数据库，检索时，首先要选择数据库。如果检索论文是否被EI收录，必须选择“Compendex”。此外，将检索出的结果展开后也可以判断此文是被哪个数据库收录，其区别如下：<br>1．EI收录：       检索序列号是11位数字； Database：Compendex.<br>2． Inspecs收录：检索序列号是7位数字； Database：Inspec.</p>
+<p>EI数据库核心部分与非核心部分的区别<br>在检索结果中，凡含有：<br>1． Abstract<br>2． Ei main heading<br>3． Ei classification codes<br>以上三个字段的（三者缺一不可）为核心部分收录，否则为Page one部分收录.</p>
+<p>一、看会议论文出版社：会议EI收录其实与主办方关系很小，甚至没有任何关系，第一要素主要处决于论文会议集的出版单位，根据经验，例举全球著名出版社如下：<br>1、德国斯普林格出版社（SPRINGER）：100%EI收录<br>2、美国机械工程学会出版社（ASME）：100%EI收录<br>3、美国土木工程学会出版社（ASCE）：100%EI收录<br>4、美国电子电气工程计算机学会出版社（IEEECS）：99%EI收录<br>5、美国电子电气工程出版社（IEEE）：90%EI收录<br>6、英国工程技术出版社（IET）：90%EI收录<br>7、法国Atlantis Press：70%</p>
+<p> 二、在确定第一要素后，请考察会议主席的诚信度<br>1、国际一级学会发起：如IFAC、IEEE等。如果IEEE发起的会议IEEE要占51%的注册费，因此，该类会议注册费均在500美元以上。请注意中国2007年只有一个是IEEE发起的，即ICMA2007，其他均不是，2008年目前中国没有一个会议是IEEE发起。<br>2、国家一级学会发起：如中国计算机学会、中国自动化学会、中国通讯学会等，如WCICA、CCC等<br>3、各大学校级领导：中国大学校级领导作为主席办国际会议具有中国特色（如ICTE等）。<br>4、国际一级学会技术支持：如IEEECS、IEEE、IET、ASME、ASCE等。如ICIC、ICNC）<br>5、其他学者</p>
+<p>掌握以上两点后，请注意你的论文格式与英文摘要的书写，EI自然OK！</p>
+<p>其它经验：</p>
+<p>1、仅仅讨论的是EI收录的技巧，不是讨论会议的水平。会议仅仅是一个交流的平台，不像期刊，每个都有一个影响因子。</p>
+<p>2、ICMA2007确实是2007年唯一在中国由IEEE发起的会议。另外，它不是由IEEECS出版，而是由IEEE出版，区别于其他会议有三点（1）会议常规注费费高500美元，因IEEE要占大头。（2）设有IEEE会员注册费，这是IEEE会员的权利，因为他们每年交纳500-1000元的会费。（3）EI收录快，两个月全部搞定，这是组织方与IEEE的约定。</p>
+<p>3、德国斯普林格出版社确实是全球最高水平的出版社，尽管LNCS被SCI淘汰，但在国外，还是得到同行的认可。LNCS仍然被EI和ISTP双收录，收录的时间处决于出版商论文集递交的时间与EI对论文进行加工时间。由于LNCS出版量太大，且这两年大部分集中在东亚，由于担心被EI也淘汰，所以在大量减少出版量的同时，现在开始延迟递交，获取一个每年的EI收录的平衡，不至于全部集中有2006和2007年，另外他们也希望在2009年重返SCI。所以LNCS出版的论文EI收录肯定没问题，只是时间问题。另外，国内知名大学学报均想向斯普林格出版社靠拢，如武汉大学学报英文版和中南大学英文版均改由斯普林格出版，已从EI中国收录期刊中消失，不过他们已成功被SCI收录。这也从侧面说明了斯普林格出版社的影响力。</p>
+<p>4、如果你只是希望论文能被EI，建议你不要投欧美国家的会议，因为他们对EI检索根本不重视，因此，有些会开完后论文集根本不送EI总部，或者拖得很迟。作者曾参加23次国际会议，其中的21次被SCI/EI/ISTP收录，唯一的两次没有被收录的恰恰是2004年美国举办的两个知名国际会议，所以，如果你的目的是希望论文被收录，没必要舍近求远，况且欧美国家的会议注册费在500-800美元间，特贵。</p>
+<p>5、英国的IET出版的能EI，一般9个月左右，我06年曾参加了一次国际会议，只发表了论文摘要，居然也被收录了，成了我最短的EI收录论文，仅仅约500字。</p>
+<p>6、上面只是我的经验，当然你们无法考证，我发表的5篇斯普林格出版社全部EI、ISTP收录，其中3篇SCI收录。发表在IEEECS上的6篇全部EI、ISTP收录，发表在IEEE上的5篇中全部ISTP收录，4篇EI收录，一篇没被EI收录是2003年的ICNNSP。发表在IET上的两篇全部EI、ISTP收录。发表在ASCE上的两篇全部EI、ISTP收录。我同学发表在ASME上的3篇全部EI、ISTP收录。</p>
+<p>7、国际一级学会发起的会议诚信度应该不需要说明。</p>
+<p>8、国家一级学会成员主席一般都是院士，他们的诚信度也应该不需要说明。</p>
+<p>9、各大学校级领导做主席，由于他们的特殊身份，因此，发布的会议信息可靠信更高。</p>
+<p>10、其他学者排在最后，因为一个长江学者能如此忽悠学生，我们还能相信谁。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BC%9A%E8%AE%AE-EI/" rel="tag">会议 EI</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-huiyi" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/13/huiyi/" class="article-date">
+      <time datetime="2022-04-13T03:21:25.000Z" itemprop="datePublished">2022-04-13</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/13/huiyi/">雷达、遥感、人工智能会议</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>遥感、雷达<br>IEEE International Geoscience and Remote Sensing Symposium (IGARSS)<br>国际地球科学与遥感大会，每年召开<br>Jul. 19 - 24, 2020, Hawaii, USA<br>主页：<a target="_blank" rel="noopener" href="http://www.igarss2020.org/">www.igarss2020.org</a><br>H5指数：28</p>
+<p>IEEE Radar Conference (RadarConf)<br>IEEE雷达会议，每年召开<br>Sep. 21 - 25, 2020, Florence, Italy<br>主页：<a target="_blank" rel="noopener" href="http://www.radarconf20.org/">www.radarconf20.org</a><br>H5指数：29</p>
+<p>SPIE Remote Sensing<br>SPIE(国际光学工程学会)国际遥感会议，每年在欧洲召开<br>Sept. 21 - 24, 2020, Edinburgh, United Kingdom<br>主页：spie.org/conferences-and-exhibitions/remote-sensing<br>H5指数：20</p>
+<p>European Conference on Synthetic Aperture Radar (EuSAR)<br>欧洲合成孔径雷达会议，偶数年在欧洲召开<br>Jun. 15 - 18, 2020, Leipzig, Germany<br>主页：<a target="_blank" rel="noopener" href="http://www.eusar.de/">www.eusar.de</a><br>H5指数：15</p>
+<p>IEEE International Radar Conference (RADAR)<br>国际雷达会议，美中英澳法五国每年轮流召开<br>Apr. 27 - May. 01, 2020, Washington, DC, USA<br>主页：radar2020.org<br>H5指数：14</p>
+<p>European Radar Conference (EuRAD)<br>欧洲雷达会议，欧洲微波年会(Europe Microwave Week)之一，每年在欧洲召开<br>Sep. 13 - 18, 2020, Utrecht, Netherlands<br>主页：<a target="_blank" rel="noopener" href="http://www.eumweek.com/">www.eumweek.com</a><br>H5指数：14</p>
+<p>International Radar Symposium (IRS)<br>国际雷达研讨会，每年在欧洲召开<br>Jun. 18 - 21, 2020, Vilnius, Lithuania<br>主页：<a target="_blank" rel="noopener" href="http://www.dgon-irs.org/">www.dgon-irs.org</a><br>H5指数：14</p>
+<p>IEEE Asia-Pacific Conference on Synthetic Aperture Radar (APSAR)<br>亚太合成孔径雷达会议，奇数年在亚太地区召开<br>Nov. 26 - 29, 2019, Xiamen, China<br>主页：apsar2019.org.cn<br>H5指数：8</p>
+<p>IET International Radar Conference (IRC)<br>IET国际雷达会议<br>Nov. 04 - 06, 2020, Chongqing, China<br>主页：<a target="_blank" rel="noopener" href="http://www.ietradar.org/">www.ietradar.org</a><br>H5指数：7</p>
+<p>信号与图像处理、模式识别与计算机视觉<br>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)<br>国际计算机视觉与模式识别会议，计算机视觉领域三大顶会之一，每年在美国召开<br>Jun. 14 - 19, 2020, Seattle, Washington, USA<br>主页：cvpr2020.thecvf.com<br>H5指数：240</p>
+<p>International Conference on Computer Vision (ICCV)<br>国际计算机视觉会议，计算机视觉领域三大顶会之一，奇数年召开<br>Oct. 27 - Nov. 03, 2019, Seoul, Korea<br>主页：iccv2019.thecvf.com<br>H5指数：129<br>European Conference on Computer Vision (ECCV)<br>欧洲计算机视觉会议，计算机视觉领域三大顶会之一，偶数年在欧洲召开<br>Aug. 23 - 28, 2020, Glasgow, Scotland<br>主页：eccv2020.eu<br>H5指数：137</p>
+<p>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)<br>国际声学、语音与信号处理会议，规模最大、最全面的信号处理及其应用方面的会议，每年召开<br>May 04 - 09, 2020, Barcelona, Spain<br>主页：2020.ieeeicassp.org<br>H5指数：80</p>
+<p>British Machine Vision Conference (BMVC)<br>英国机器视觉会议，计算机视觉领域著名国际会议，每年在英国召开<br>Sep. 2020, Manchester, UK<br>主页：Coming soon<br>H5指数：46</p>
+<p>IEEE International Conference on Image Processing (ICIP)<br>国际图像处理会议，每年召开<br>Sept. 25 - 28, 2020, Abu Dhabi, UAE<br>主页：2020.ieeeicip.org<br>H5指数：45</p>
+<p>International Conference on Pattern Recognition (ICPR)<br>国际模式识别会议，偶数年召开<br>Sep. 13 - 18, 2020, Milan, Italy<br>主页：icpr2020.com<br>H5指数：38</p>
+<p>Asian Conference on Computer Vision (ACCV)<br>亚洲计算机视觉会议，在亚太地区召开，2010年之前奇数年召开，之后偶数年<br>Nov. 30 - Dec. 04, 2020, Kyoto, Japan<br>主页：accv2020.kyoto<br>H5指数：38</p>
+<p>European Signal Processing Conference (EUSIPCO)<br>欧洲信号处理会议，每年在欧洲召开<br>Aug. 24 - 28, 2020, Amsterdam, Netherlands<br>主页：eusipco2020.org<br>H5指数：28</p>
+<p>IEEE Global Conference on Signal and Information Processing (GlobalSIP)<br>全球信号与信息处理会议，每年召开<br>Nov., 2020, TBD, Canada<br>主页：Coming soon<br>H5指数：27</p>
+<p>International Conference on Information Fusion (FUSION)<br>国际信息融合会议，每年召开<br>Jul. 06 - 09, 2020, Sun City, South Africa<br>主页：fusion2020.org<br>H5指数：26</p>
+<p>IEEE International Conference on Visual Communications and Image Processing (VCIP)<br>国际视觉通信与图像处理会议，每年召开<br>Dec. 01 - 04, 2020, Hong Kong<br>主页：vcip2020.org<br>H5指数：14</p>
+<p>IEEE International Conference on Signal Processing (ICSP)<br>国际信号处理会议，偶数年召开<br>Oct. 18 - 22, 2020, Beijing, China<br>主页：icsp-ieee.org<br>H5指数：13</p>
+<p>机器学习与人工智能<br>International Conference on Learning Representations (ICLR)<br>国际学习表征会议，深度学习顶级会议，由位列深度学习三大巨头之二的 Yoshua Bengio 和 Yann LeCun 牵头创办，每年召开<br>Apr. 26 - 30, 2020, Addis Ababa Ethiopia<br>主页：iclr.cc/Conferences/2020<br>H5指数：150</p>
+<p>International Conference on Machine Learning (ICML)<br>国际机器学习会议，如今已发展为由国际机器学习学会（IMLS）主办的年度机器学习国际顶级会议，每年召开<br>Jul. 12 - 18, 2020, Vienna, Austria<br>主页：icml.cc/Conferences/2020<br>H5指数：135</p>
+<p>Neural Information Processing Systems (NeurIPS)<br>神经信息处理系统大会，机器学习领域的顶级会议，每年召开<br>Dec. 08 - 14, 2019, Vancouver, Canada<br>主页：nips.cc/Conferences/2019<br>H5指数：134</p>
+<p>AAAI Conference on Artificial Intelligence (AAAI)<br>美国人工智能协会主办的人工智能大会，人工智能领域的顶级会议之一，每年在美国召开（个别年份在加拿大）<br>Feb. 07 - 12, 2020, New York, USA<br>主页：aaai.org/Conferences/AAAI-20<br>H5指数：95</p>
+<p>International Joint Conference on Artificial Intelligence (IJCAI)<br>国际人工智能联合会议，人工智能领域顶级国际会议，原为奇数年召开，自2015年起改为每年召开<br>Jul. 11 - 17, 2020, Yokohama, Japan<br>主页：<a target="_blank" rel="noopener" href="http://www.ijcai20.org/">www.ijcai20.org</a><br>H5指数：67</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BC%9A%E8%AE%AE-%E9%9B%B7%E8%BE%BE-%E9%81%A5%E6%84%9F/" rel="tag">会议 雷达 遥感</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-qingkanhehuiyi" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/12/qingkanhehuiyi/" class="article-date">
+      <time datetime="2022-04-12T10:46:44.000Z" itemprop="datePublished">2022-04-12</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/12/qingkanhehuiyi/">学术期刊和学术会议</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="学术期刊"><a href="#学术期刊" class="headerlink" title="学术期刊"></a>学术期刊</h1><p>学术期刊（Journal）一般指的是定期出版的刊物，此处我们讨论的是正式期刊，即可以公开发行并且经过国家批准。按照公开发行周期可以分为周刊、旬刊、半月刊、月刊、季刊、半年刊、年刊等。  </p>
+<p>每本合法期刊都有正式的编号。国际期刊拥有的是ISSN号(International Standard Serial Number)，国内发行的正规期刊除了ISSN号，还有一个CN号（国内统一连续出版物号）。学术期刊中的每篇文章通常还会有DOI号（Digital Object Identifier），相当于每篇文章的身份识别码，在CrossRef（<a target="_blank" rel="noopener" href="http://www.crossref.org)网站,全球最大的doi注册机构,可以利用doi来检索到相关论文.学术期刊可以由出版商发行(如elsevier、springer、wiley等),也可以由学协会(如ieee、acs、acm)、科研机构和高校发起./">http://www.crossref.org）网站，全球最大的DOI注册机构，可以利用DOI来检索到相关论文。学术期刊可以由出版商发行（如Elsevier、Springer、Wiley等），也可以由学协会（如IEEE、ACS、ACM）、科研机构和高校发起。</a>  </p>
+<p>当我们进行了科研项目，取得了不错的成果，希望将论文投递到某个期刊中时，我们需要按照期刊的主题和收录范围、格式、篇幅以及期刊所要求的附加材料等进行相应整理，并按照期刊的要求进行投递，如通过投稿系统或邮件的方式。  </p>
+<p>学术期刊中常见的文献类型包括研究型论文（Research Article）、综述型论文（Review Article）、社论（Editorial）、书评（Book Review）等。一般来说，学术论文会经历同行评议(Peer Review)的过程。  </p>
+<p>编辑收到稿件后会检查相应材料是否符合要求并对文章内容进行初筛（15个工作日内），初筛通过后会组织审稿人进行同行评议（平均1-3个月），审稿意见可能是小修改（Minor Revision）、大修改（Major Revision）、建议转投（Transfer）或退回(Reject)。如果同行评议通过的话，编辑会向作者发放正式的邮件通知或录用函，联系作者进行样刊校稿和签订版权协议等沟通。如果是开放获取（Open Access）的论文，还会根据期刊的要求，交纳相应的费用（Article Processing Charge, APC）。  </p>
+<h1 id="学术会议"><a href="#学术会议" class="headerlink" title="学术会议"></a>学术会议</h1><p>学术会议（conference/Seminar等）通常为学者、科研人员和企业工业界研发人员提供了交流的平台。  </p>
+<p>学术会议通常有自己的主题、论坛和分论坛、召开时间和地点。学术学术会议的参与形式包括报告（Presentation）、会议论文投递、设置展台和参加学术交流晚宴等。报告可分为口头报告（Oral Presentation）和墙报报告（Poster Presentation），参加学术会议时可特别关注一些Keynote Speech(大会报告)和Invited Speech（邀请报告），往往能遇见大咖并了解领域最新进展。会议论文通常包括摘要（Abstract）和全文（Full-text）两种，有些学术会议只接收摘要投递，需要提前看清楚会议要求。  </p>
+<p>根据会议主办方的不同要求，有的会议会出版专门的论文集收录这些论文和摘要并在会后将这些论文集提交到一些知名的引文文献库（如Scopus、SCI等），如能通过审核，相关论文或摘要可以在引文数据库中被检索到。也有的会议和期刊联合举办，通过期刊出版特刊（Special Issue）或利用某一期期刊的附录来收录会议论文和摘要，如果这些期刊本身已被引文文献库收录，相关论文上线后也可以在库中（如Scopus、SCI等）检索到。  </p>
+<p>会议通常会有几个重要的时间点（Deadline），英文分别是叫做Submission DDL, Notification DDL, Registration DDL, Conference Date。我们举一个实例：<br><img src="https://pic3.zhimg.com/80/v2-e9e6a13b00b8f8683b0ab6096be12bb6_720w.jpg" alt="image name"></p>
+<p>一般来说，首先你需要根据你文章或者你的主题去寻找合适的学术会议，然后关注几个重要日期：<br><img src="https://pic4.zhimg.com/80/v2-5b9c05faeada2479d3d4744d52baf0b3_720w.jpg" alt="image name"><br>Submission DDL：</p>
+<p>一般意味着你在这个时间之前必须按照会议官网要求，提交符合主题、格式和字数等要求的文章、摘要、学术海报或报告提纲等。一般是通过会议系统或邮箱注册和递交。</p>
+<p>Notification DDL：</p>
+<p>会议会最晚在这个日期之前告知你的文章是否/摘要被录用，你是否需要到现场参加oral presentation（展示）等。Registration DDL：当我们的文章被录用之后，我们如果确定参加会议和确认文章被录用的话，那就需要按照邮件的指示提交注册信息，缴纳注册费和论文处理费（APC）。</p>
+<p>Conference Date：</p>
+<p>当我们拿到会议通知函且交完注册费之后，就可以等待会议召开的日期，线上或者线下参加会议，展示我们的科研成果和跟现场的教授学者交流。</p>
+<h1 id="会议论文和期刊论文的区别"><a href="#会议论文和期刊论文的区别" class="headerlink" title="会议论文和期刊论文的区别"></a>会议论文和期刊论文的区别</h1><p>EI检索分两种，期刊和会议论文，他们是两种不同的检索类型，也就是所说的JA（Journal Article），CA（conference Article），目前来说，EI期刊论文含金量高于EI会议论文，当然发表难度要大很多，投稿所花时间更长。EI会议更多是发表文章后，录用函收到后，去参加，目的是同国际相同领域的专家学者进行学术交流，很多时候，创新的想法、概念往往都是从参与的本学科甚至跨学科的国际会议上迸发出来的，同时，通过会议，有可能通过与同行的学者交流，说不定可以拓宽自己的研究道路，研究方法，开展国际交流合作等。所以国际会议很多时候，文章没有那么成熟，而期刊论文，更多是成熟的想法和研究，才能见刊。两者的功能，定位不一样。但是目前来看，评优评奖，评职称，两种形式都可以接受，如果会议论文发表很多了，可以选择期刊，如果初学者，或者自己能力有限，可以先发表EI会议论文，试试水。 </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%9F%E5%88%8A%E3%80%81%E4%BC%9A%E8%AE%AE/" rel="tag">期刊、会议</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-huiyichaxun" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/11/huiyichaxun/" class="article-date">
+      <time datetime="2022-04-11T10:56:41.000Z" itemprop="datePublished">2022-04-11</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/11/huiyichaxun/">学术会议查找</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>学术会议是科研工作者参与学术活动的主要途径之一，很多人都比较关注。  </p>
+<h1 id="谷歌"><a href="#谷歌" class="headerlink" title="谷歌"></a>谷歌</h1><p>直接使用谷歌搜索会议加年份找到会议官网。  </p>
+<h1 id="一些学术会议检索平台"><a href="#一些学术会议检索平台" class="headerlink" title="一些学术会议检索平台"></a>一些学术会议检索平台</h1><p>有很多学术会议网站提供了检索某个领域或者各个领域的学术会议的服务。</p>
+<p>然而，学术会议检索平台非常多，能否在这些网站检索到想要的信息往往取决于以下几个因素。</p>
+<p>该平台的检索服务是专注于特定领域，还是覆盖各个学科。比如，某个网站主要侧重计算机领域，因此想要在上面搜索其他领域的会议信息会比较难。<br>该平台是否及时收录了将要举办的学术会议信息。如果明明属于该网站的检索领域范围内，却没有及时收录，那么这个网站很难称得上一个优秀的平台。<br>该平台是收录国内的中文学术会议，还是国际学术会议。如果你想要搜索国际学术会议，就不要误入国内学术会议检索网站了。</p>
+<p>Searchconf<br>这是一个受到很多人推荐的学术会议检索平台。  </p>
+<p><a target="_blank" rel="noopener" href="http://www.searchconf.net/">http://www.searchconf.net</a></p>
+<p>Allconferences<br>Allconferences是一个国外网站，主要集中在英文学术会议的检索，而且覆盖了多个学科，相当的全面。</p>
+<p><a target="_blank" rel="noopener" href="http://www.allconferences.com/">http://www.allconferences.com</a></p>
+<p>中国学术会议网<br>中国学术会议网是知网下的一个网站，主要发布中文学术会议信息。</p>
+<p><a target="_blank" rel="noopener" href="http://conf.cnki.net/">http://conf.cnki.net</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E6%9C%AF%E4%BC%9A%E8%AE%AE/" rel="tag">学术会议</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-jiangchong" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/11/jiangchong/" class="article-date">
+      <time datetime="2022-04-11T10:45:01.000Z" itemprop="datePublished">2022-04-11</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/11/jiangchong/">论文降重</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="1-确定初稿查重平台"><a href="#1-确定初稿查重平台" class="headerlink" title="1. 确定初稿查重平台"></a>1. 确定初稿查重平台</h1><p>查重最重要的是一定要注意查重网站的安全性，要选择有行业认证或者官网的网站，不然自己辛辛苦苦写的论文被倒卖，到时候都没地方哭啊。可以在百度学术上搜索查重入口，新人首单都有一定的优惠，如果实在不放心，也可以搜索查重软件官网进行查重。paperyy主要是和百度上能搜索到的内容重复，知网是和期刊毕业论文重复。大家可以根据自己使用的参考内容进行选择最适合自己的查重网站，如果百度内容多就先用paperyy，如果参考期刊毕业论文多就用万方或者维普。</p>
+<h1 id="paperyy和知网查重区别"><a href="#paperyy和知网查重区别" class="headerlink" title="paperyy和知网查重区别"></a>paperyy和知网查重区别</h1><p>（1）检测规则原理的差别<br> 知网是连续13字符相似即被系统判断为重复，并且知网系统存在阀值5%，同篇文章同时检测也会有误差。PaperYY的检测规则原理目前官网尚未明确说明，只给出这样一句话“四位海归博士，钻研文章指纹对比技术多年，在大数据云基础上，独创分类比对技术，准确率高达90%以上，预处理指纹技术，秒级响应，让检测查重不止是准确”但是和知网比较肯定是有差别的，中国知网是国家的，因为知网检测原理那是中国知网发明的专利并且还获得过科技进步奖！<br>（2）对比库范围的差别<br>PaperYY官网并未说明对比库资源，超过1200亿海量指纹数据，覆盖大部分期刊，图书，论文，互联网数据。9000万中文期刊，600万学位论文和会议论文，100万中文图书，1000万历年报纸数据，1000多万中外文标准专利，10亿中外文互联网网页；而知网对比库范围有学术论文库和网络资源还有大学生论文联合对比库，知网可以检测到学长毕业论文，因此尽量不要参考学长论文。</p>
+<h1 id="降重方法"><a href="#降重方法" class="headerlink" title="降重方法"></a>降重方法</h1><p>（1） 阈值法<br>每个网站的查重方式是不同的，有多少字重复，有某个段落多少相似内容，当超过该阈值就有可能被判红，在这样的情况下需要先确定该网站的查重阈值是什么，然后根据阈值进行相应的规避，有时候可能只需要往一段话里加两三个字就可以躲避重复，这就是确定阈值的好处。<br>（2） 多语言翻译法<br>将论文内容放到翻译网站，然后用小众的语言反复翻译，可以多翻译几回。你会发现，翻译来的句子可能有点不通顺，但是里面的某些字词以及描述方式居然是可以用的，你要做的就是把这些“精华”提取出来，并融在原本的论文中，让它具有可读性。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%99%8D%E9%87%8D%EF%BC%8C%E8%AE%BA%E6%96%87/" rel="tag">降重，论文</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-docker使用" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/04/docker%E4%BD%BF%E7%94%A8/" class="article-date">
+      <time datetime="2022-04-04T12:53:43.000Z" itemprop="datePublished">2022-04-04</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/04/docker%E4%BD%BF%E7%94%A8/">docker使用</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>1.使用Dockerfile创建镜像</p>
+<p>新建Dockerfile</p>
+<p>输入</p>
+<p>FROM centos:7</p>
+<p>ADD index.html index.html #复制文件</p>
+<p>生成镜像</p>
+<p>docker build -t nginx . #最后加点表示当前目录</p>
+<p>dokcer image ls</p>
+<p>运行镜像容器</p>
+<p>dokcer run -d -i –name cotainer nginx</p>
+<p>进入容器</p>
+<p>docker exec -it container bash</p>
+<p>退出容器</p>
+<p>exit</p>
+<p>查看运行中容器</p>
+<p>docker ps -a</p>
+<p>查看镜像</p>
+<p>docker image ls</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/" rel="tag">docker</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="解决git@github.com-Permission" class="article article-type-解决git@github.com" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/04/Permission/" class="article-date">
+      <time datetime="2022-04-04T12:19:17.000Z" itemprop="datePublished">2022-04-04</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/04/Permission/">ssh连接github Permission</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>客户端生成ssh key</p>
+<p>ssh-keygen -t rsa -C “<a href="mailto:&#52;&#55;&#48;&#56;&#x31;&#50;&#x30;&#x38;&#x37;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#52;&#55;&#48;&#56;&#x31;&#50;&#x30;&#x38;&#x37;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a>“<br>然后再终端下执行命令：</p>
+<p>ssh -v <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>在终端再执行以下命令</p>
+<p>ssh-agent -s </p>
+<p>接着在执行</p>
+<p>ssh-add ~/.ssh/id_rsa</p>
+<p>出现Could not open a connection to your authentication agent.<br>这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa这个命令就没问题了。</p>
+<p>配置服务端<br>打开你刚刚生成的id_rsa.pub，将里面的内容复制，进入你的github账号，在settings下，SSH and GPG keys下new SSH key，然后将id_rsa.pub里的内容复制到Key中，完成后Add SSH Key。</p>
+<p>验证Key<br>ssh -T <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;">&#x67;&#105;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;</a> </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-LINK1000" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/04/LINK1000/" class="article-date">
+      <time datetime="2022-04-04T12:18:23.000Z" itemprop="datePublished">2022-04-04</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/04/LINK1000/">LINK1000错误</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>今天在调试工程的时候发现，Debug模式下运行正常。但是转到Release后就会出现以下错误：</p>
+<p>LNK1000  Internal error during IMAGE::Pass1<br>各种搜索之后，得到解决方法。方法如下：</p>
+<ul>
+<li>在工程属性页面 -&gt; 配置属性 -&gt; C/C++ -&gt; 优化   中会有全程序优化这一选项：在这里点击“否”。点击应用，确定即可。</li>
+</ul>
+<p>注：在配置中要选择“Release”</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-hexojiaocheng" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/04/04/hexojiaocheng/" class="article-date">
+      <time datetime="2022-04-04T12:16:41.000Z" itemprop="datePublished">2022-04-04</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/04/hexojiaocheng/">Hexo搭建与使用</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h1><p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
+<p>教程分三个部分，</p>
+<p>第一部分：hexo的初级搭建还有部署到github page上，以及个人域名的绑定。<br>第二部分：hexo的基本配置，更换主题，实现多终端工作，以及在coding page部署实现国内外分流<br>第三部分：hexo添加各种功能，包括搜索的SEO，阅读量统计，访问量统计和评论系统等。</p>
+<h1 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h1><p>hexo的初级搭建还有部署到github page上，以及个人域名的绑定。</p>
+<h1 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h1><ol>
+<li>安装Git</li>
+</ol>
+<p>windows：到git官网上下载,Download git,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。</p>
+<p>linux：对linux来说实在是太简单了，因为最早的git就是在linux上编写的，只需要一行代码</p>
+<p>sudo apt-get install git</p>
+<ol start="2">
+<li>安装nodejs<br>Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具。</li>
+</ol>
+<p>windows：nodejs选择LTS版本就行了。</p>
+<p>linux：</p>
+<p>sudo apt-get install nodejs<br>sudo apt-get install npm<br>安装完后，打开命令行</p>
+<p>node -v<br>npm -v<br>检查一下有没有安装成功</p>
+<p>顺便说一下，windows在git安装完后，就可以直接使用git bash来敲命令行了，不用自带的cmd，cmd有点难用。</p>
+<ol start="3">
+<li>安装hexo<br>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后cd到这个文件夹下（或者在这个文件夹下直接右键git bash打开）。</li>
+</ol>
+<p>输入命令</p>
+<p>npm install -g hexo-cli<br>依旧用hexo -v查看一下版本</p>
+<p>至此就全部安装完了。</p>
+<p>接下来初始化一下hexo</p>
+<p>hexo init myblog<br>这个myblog可以自己取什么名字都行，然后</p>
+<p>cd myblog //进入这个myblog文件夹<br>npm install<br>新建完成后，指定文件夹目录下有：</p>
+<p>node_modules: 依赖包<br>public：存放生成的页面<br>scaffolds：生成文章的一些模板<br>source：用来存放你的文章<br>themes：主题<br>** _config.yml: 博客的配置文件**<br>hexo g<br>hexo server<br>打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。</p>
+<ol start="4">
+<li>GitHub创建个人仓库</li>
+</ol>
+<p>创建一个和你用户名相同的仓库，后面加.<a target="_blank" rel="noopener" href="http://github.io,只有这样,将来要部署到github/">http://github.io，只有这样，将来要部署到GitHub</a> page的时候，才会被识别，也就是<a target="_blank" rel="noopener" href="http://xxxx.github.io,其中xxx就是你注册github的用户名./">http://xxxx.github.io，其中xxx就是你注册GitHub的用户名。</a></p>
+<ol start="5">
+<li>生成SSH添加到GitHub<br>回到你的git bash中，</li>
+</ol>
+<p>git config –global user.name “yourname”<br>git config –global user.email “youremail”<br>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
+<p>可以用以下两条，检查一下你有没有输对</p>
+<p>git config user.name<br>git config user.email<br>然后创建SSH,一路回车</p>
+<p>ssh-keygen -t rsa -C “youremail”<br>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。</p>
+<ol start="6">
+<li>将hexo部署到GitHub<br>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为 YourgithubName就是你的GitHub账户</li>
+</ol>
+<p>deploy:<br>  type: git<br>  repo: <a target="_blank" rel="noopener" href="https://github.com/YourgithubName/YourgithubName.github.io.git">https://github.com/YourgithubName/YourgithubName.github.io.git</a><br>  branch: master<br>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
+<p>npm install hexo-deployer-git –save<br>然后</p>
+<p>hexo clean<br>hexo generate<br>hexo deploy<br>其中 hexo clean清除了你之前生成的东西，也可以不加。 hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写 hexo deploy 部署文章，可以用hexo d缩写</p>
+<p>注意deploy时可能要你输入username和password。</p>
+<p>得到下图就说明部署成功了，过一会儿就可以在<a target="_blank" rel="noopener" href="http://yourname.github.io/">http://yourname.github.io</a> 这个网站看到你的博客了！！</p>
+<ol start="7">
+<li>设置个人域名<br>现在你的个人网站的地址是 yourname.github.io，如果觉得这个网址逼格不太够，这就需要你设置个人域名了。但是需要花钱。</li>
+</ol>
+<p>注册一个阿里云账户,在阿里云上买一个域名，我买的是 fangzh.top，各个后缀的价格不太一样，比如最广泛的.com就比较贵，看个人喜好咯。</p>
+<p>你需要先去进行实名认证,然后在域名控制台中，看到你购买的域名。</p>
+<p>点解析进去，添加解析。</p>
+<p>登录GitHub，进入之前创建的仓库，点击settings，设置Custom domain，输入你的域名fangzh.top</p>
+<p>然后在你的博客文件source中创建一个名为CNAME文件，不要后缀。写上你的域名。</p>
+<p>最后，在gitbash中，输入</p>
+<p>hexo clean<br>hexo g<br>hexo d<br>过不了多久，再打开你的浏览器，输入你自己的域名，就可以看到搭建的网站啦！</p>
+<p>接下来你就可以正式开始写文章了。</p>
+<p>hexo new newpapername<br>然后在source/_post中打开markdown文件，就可以开始编辑了。当你写完的时候，再</p>
+<p>hexo clean<br>hexo g<br>hexo d</p>
+<p>第二部分<br>hexo的基本配置，更换主题，实现多终端工作，以及在coding page部署实现国内外分流。</p>
+<ol>
+<li>hexo基本配置</li>
+</ol>
+<p>在文件根目录下的_config.yml，就是整个hexo框架的配置文件了。可以在里面修改大部分的配置。详细可参考官方的配置描述。</p>
+<p>网站<br>参数描述title网站标题subtitle网站副标题description网站描述author您的名字language网站使用的语言timezone网站时区。Hexo 默认使用您电脑的时区。时区列表。比如说：America/New_York, Japan, 和 UTC 。</p>
+<p>其中，description主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。author参数用于主题显示文章的作者。</p>
+<p>网址<br>参数描述url网址root网站根目录permalink文章的 永久链接 格式permalink_defaults永久链接中各部分的默认值</p>
+<p>在这里，你需要把url改成你的网站域名。</p>
+<p>permalink，也就是你生成某个文章时的那个链接格式。</p>
+<p>比如我新建一个文章叫temp.md，那么这个时候他自动生成的地址就是<a target="_blank" rel="noopener" href="http://yoursite.com/2018/09/05/temp%E3%80%82">http://yoursite.com/2018/09/05/temp。</a></p>
+<p>以下是官方给出的示例，关于链接的变量还有很多，需要的可以去官网上查找 永久链接 。</p>
+<p>参数结果:year/:month/:day/:title/2013/07/14/hello-world:year-:month-:day-:title.html2013-07-14-hello-world.html:category/:titlefoo/bar/hello-world</p>
+<p>再往下翻，中间这些都默认就好了。</p>
+<p>theme: landscape<br>​</p>
+<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repo: <repository url><br>  branch: [branch]<br>​<br>theme就是选择什么主题，也就是在theme这个文件夹下，在官网上有很多个主题，默认给你安装的是lanscape这个主题。当你需要更换主题时，在官网上下载，把主题的文件放在theme文件夹下，再修改这个参数就可以了。</p>
+<p>接下来这个deploy就是网站的部署的，repo就是仓库(Repository)的简写。branch选择仓库的哪个分支。这个在之前进行github page部署的时候已经修改过了，不再赘述。而这个在后面进行双平台部署的时候会再次用到。</p>
+<p>Front-matter<br>Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量，举例来说：</p>
+<p>下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
+<p>参数描述layout布局title标题date建立日期updated更新日期comments开启文章的评论功能tags标签（不适用于分页）categories分类（不适用于分页）permalink覆盖文章网址</p>
+<p>其中，分类和标签需要区别一下，分类具有顺序性和层次性，也就是说 Foo, Bar 不等于 Bar, Foo；而标签没有顺序和层次。</p>
+<p>categories:</p>
+<ul>
+<li>Diary<br>tags:</li>
+<li>PS3</li>
+<li>Games<br>layout（布局）<br>当你每一次使用代码</li>
+</ul>
+<p>hexo new paper<br>它其实默认使用的是post这个布局，也就是在source文件夹下的_post里面。</p>
+<p>Hexo 有三种默认布局：post、page 和 draft，它们分别对应不同的路径，而您自定义的其他布局和 post 相同，都将储存到 source/_posts 文件夹。</p>
+<p>布局路径postsource/_postspagesourcedraftsource/_drafts</p>
+<p>而new这个命令其实是：</p>
+<p>hexo new [layout] <title><br>只不过这个layout默认是post罢了。</p>
+<p>page<br>如果你想另起一页，那么可以使用</p>
+<p>hexo new page board<br>系统会自动给你在source文件夹下创建一个board文件夹，以及board文件夹中的index.md，这样你访问的board对应的链接就是<a target="_blank" rel="noopener" href="http://xxx.xxx/board">http://xxx.xxx/board</a></p>
+<p>draft<br>draft是草稿的意思，也就是你如果想写文章，又不希望被看到，那么可以</p>
+<p>hexo new draft newpage<br>这样会在source/_draft中新建一个newpage.md文件，如果你的草稿文件写的过程中，想要预览一下，那么可以使用</p>
+<p>hexo server –draft<br>在本地端口中开启服务预览。</p>
+<p>如果你的草稿文件写完了，想要发表到post中，</p>
+<p>hexo publish draft newpage<br>就会自动把newpage.md发送到post中。</p>
+<ol start="2">
+<li>更换主题<br>到这一步，如果你觉得默认的landscape主题不好看，那么可以在官网的主题中，选择你喜欢的一个主题进行修改就可以啦。<br>这里有200多个主题可以选。不过最受欢迎的就是那么几个，比如NexT主题，非常的简洁好看，大多数人都选择这个，关于这个的教程也比较多。不过我选择的是hueman这个主题，好像是从WordPress移植过来的.</li>
+</ol>
+<p>直接在github链接上下载下来，然后放到theme文件夹下就行了，然后再在刚才说的配置文件中把theme换成那个主题文件夹的名字，它就会自动在theme文件夹中搜索你配置的主题。</p>
+<p>而后进入hueman这个文件夹，可以看到里面也有一个配置文件_config.xml，貌似它默认是_config.xml.example，把它复制一份，重命名为_config.xml就可以了。这个配置文件是修改你整个主题的配置文件。</p>
+<p>menu（菜单栏）<br>也就是上面菜单栏上的这些东西。</p>
+<p>其中，About这个你是找不到网页的，因为你的文章中没有about这个东西。如果你想要的话，可以执行命令</p>
+<p>hexo new page about<br>它就会在根目录下source文件夹中新建了一个about文件夹，以及index.md，在index.md中写上你想要写的东西，就可以在网站上展示出来了。</p>
+<p>如果你想要自己再自定义一个菜单栏的选项，那么就</p>
+<p>hexo new page yourdiy<br>然后在主题配置文件的menu菜单栏添加一个 Yourdiy : /yourdiy，注意冒号后面要有空格，以及前面的空格要和menu中默认的保持整齐。然后在languages文件夹中，找到zh-CN.yml，在index中添加yourdiy: ‘中文意思’就可以显示中文了。</p>
+<p>customize(定制)<br>在这里可以修改你的个人logo，默认是那个hueman，在source/css/images文件夹中放入自己要的logo，再改一下url的链接名字就可以了。</p>
+<p>favicon是网站中出现的那个小图标的icon，找一张你喜欢的logo，然后转换成ico格式，放在images文件夹下，配置一下路径就行。</p>
+<p>social_links ，可以显示你的社交链接，而且是有logo的。</p>
+<p>tips:</p>
+<p>在这里可以添加一个rss功能，也就是那个符号像wifi一样的东西。</p>
+<p>添加RSS</p>
+<ol>
+<li>什么是RSS？</li>
+</ol>
+<p>RSS也就是订阅功能，你可以理解为类似与订阅公众号的功能，来订阅各种博客，杂志等等。</p>
+<ol start="2">
+<li>为什么要用RSS？</li>
+</ol>
+<p>就如同订阅公众号一样，你对某个公众号感兴趣，你总不可能一直时不时搜索这个公众号来看它的文章吧。博客也是一样，如果你喜欢某个博主，或者某个平台的内容，你可以通过RSS订阅它们，然后在RSS阅读器上可以实时推送这些消息。现在网上的垃圾消息太多了，如果你每一天都在看这些消息中度过，漫无目的的浏览，只会让你的时间一点一点的流逝，太不值得了。如果你关注的博主每次都发的消息都是精华，而且不是每一天十几条几十条的轰炸你，那么这个博主就值得你的关注，你就可以通过RSS订阅他。</p>
+<p>在我的理解中，如果你不想每天都被那些没有质量的消息轰炸，只想安安静静的关注几个博主，每天看一些有质量的内容也不用太多，那么RSS订阅值得你的拥有。</p>
+<ol start="3">
+<li>添加RSS功能</li>
+</ol>
+<p>先安装RSS插件</p>
+<p>npm i hexo-generator-feed<br>而后在你整个项目的_config.yml中找到Extensions，添加：</p>
+<h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-https-hexo-io-plugins"><a href="#Plugins-https-hexo-io-plugins" class="headerlink" title="Plugins: https://hexo.io/plugins/"></a>Plugins: <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></h2><p>#RSS订阅<br>plugin:</p>
+<ul>
+<li>hexo-generator-feed<br>#Feed Atom<br>feed:<br>type: atom<br>path: atom.xml<br>limit: 20<br>这个时候你的RSS链接就是 域名/atom.xml了。</li>
+</ul>
+<p>所以，在主题配置文件中的这个social links，开启RSS的页面功能，这样你网站上就有那个像wifi一样符号的RSS logo了，注意空格。</p>
+<p>rss: /atom.xml<br>4. 如何关注RSS？</p>
+<p>首先，你需要一个RSS阅读器，在这里我推荐inoreader，宇宙第一RSS阅读器，而且中文支持的挺好。不过它没有PC端的程序，只有网页版，chrome上有插件。在官网上用google账号或者自己注册账号登录，就可以开始你的关注之旅了。</p>
+<p>每次需要关注某个博主时，就点开他的RSS链接，把链接复制到inoreader上，就能关注了，当然，如果是比较大众化的很厉害的博主，你直接搜名字也可以的，比如每个人都非常佩服的阮一峰大师，直接在阅读器上搜索阮一峰，应该就能出来了。</p>
+<p>我关注的比如，阮一峰的网络日志，月光博客，知乎精选等，都很不错。当然，还有我！！赶快关注我吧！你值得拥有：<a target="_blank" rel="noopener" href="http://fangzh.top/atom.xml">http://fangzh.top/atom.xml</a></p>
+<p>在安卓端，inoreader也有下载，不过因为国内google是登录不了的，你需要在inoreader官网上把你的密码修改了，然后就可以用账户名和密码登录了。</p>
+<p>在IOS端，没用过，好像是reader 3可以支持inoreader账户，还有个readon也不错，可以去试试。</p>
+<p>widgets(侧边栏)<br>侧边栏的小标签，如果你想自己增加一个，比如我增加了一个联系方式，那么我把communication写在上面，在zh-CN.yml中的sidebar，添加communication: ‘中文’。</p>
+<p>然后在hueman/layout/widget中添加一个communicaiton.ejs，填入模板：</p>
+<p>&lt;% if (site.posts.length) { %&gt;<br>    <div class="widget-wrap widget-list"><br>        <h3 class="widget-title">&lt;%= __(‘sidebar.communiation’) %&gt;</h3><br>        <div class="widget"><br>            <!--这里添加你要写的内容--><br>        </div><br>    </div><br>&lt;% } %&gt;</p>
+<p>search(搜索框)<br>默认搜索框是不能够用的，</p>
+<p>you need to install hexo-generator-json-content before using Insight Search<br>它已经告诉你了，如果想要使用，就安装这个插件。</p>
+<ol start="3">
+<li>git分支进行多终端工作<br>问题来了，如果你现在在自己的笔记本上写的博客，部署在了网站上，那么你在家里用台式机，或者实验室的台式机，发现你电脑里面没有博客的文件，或者要换电脑了，最后不知道怎么移动文件，怎么办？</li>
+</ol>
+<p>在这里我们就可以利用git的分支系统进行多终端工作了，这样每次打开不一样的电脑，只需要进行简单的配置和在github上把文件同步下来，就可以无缝操作了。</p>
+<p>机制<br>机制是这样的，由于hexo d上传部署到github的其实是hexo编译后的文件，是用来生成网页的，不包含源文件。</p>
+<p>也就是上传的是在本地目录里自动生成的.deploy_git里面。</p>
+<p>其他文件 ，包括我们写在source 里面的，和配置文件，主题文件，都没有上传到github</p>
+<p>所以可以利用git的分支管理，将源文件上传到github的另一个分支即可。</p>
+<p>上传分支<br>首先，先在github上新建一个hexo分支。然后在这个仓库的settings中，选择默认分支为hexo分支（这样每次同步的时候就不用指定分支，比较方便）。<br>然后在本地的任意目录下，打开git bash，</p>
+<p>git clone <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#x6d;</a>:ZJUFangzh/ZJUFangzh.github.io.git<br>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p>
+<p>接下来在克隆到本地的ZJUFangzh.github.io中，把除了.git 文件夹外的所有文件都删掉</p>
+<p>把之前我们写的博客源文件全部复制过来，除了.deploy_git。这里应该说一句，复制过来的源文件应该有一个.gitignore，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p>
+<p>.DS_Store<br>Thumbs.db<br>db.json<br><em>.log<br>node_modules/<br>public/<br>.deploy</em>/<br>注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
+<p>而后</p>
+<p>git add .<br>git commit –m “add branch”<br>git push<br>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中node_modules、public、db.json已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p>
+<p>这样就上传完了。</p>
+<p>更换电脑操作<br>一样的，跟之前的环境搭建一样，</p>
+<p>安装git<br>sudo apt-get install git<br>设置git全局邮箱和用户名<br>git config –global user.name “yourgithubname”<br>git config –global user.email “yourgithubemail”<br>设置ssh key<br>ssh-keygen -t rsa -C “youremail”<br>#生成后填到github和coding上（有coding平台的话）<br>#验证是否成功<br>ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#109;">&#103;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#109;</a><br>ssh -T <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#105;&#116;&#46;&#99;&#111;&#100;&#x69;&#x6e;&#103;&#x2e;&#x6e;&#101;&#x74;">&#103;&#105;&#116;&#x40;&#x67;&#105;&#116;&#46;&#99;&#111;&#100;&#x69;&#x6e;&#103;&#x2e;&#x6e;&#101;&#x74;</a> #(有coding平台的话)<br>安装nodejs<br>sudo apt-get install nodejs<br>sudo apt-get install npm<br>安装hexo<br>sudo npm install hexo-cli -g<br>但是已经不需要初始化了，</p>
+<p>直接在任意文件夹下，</p>
+<p>git clone git@………………<br>然后进入克隆到的文件夹：</p>
+<p>cd xxx.github.io<br>npm install<br>npm install hexo-deployer-git –save<br>生成，部署：</p>
+<p>hexo g<br>hexo d</p>
+<p>然后就可以开始写你的新博客了</p>
+<p>hexo new newpage</p>
+<p>Tips:</p>
+<p>不要忘了，每次写完最好都把源文件上传一下<br>git add .<br>git commit –m “xxxx”<br>git push<br>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了<br>git pull</p>
+<p>第三部分<br>hexo添加各种功能，包括搜索的SEO，阅读量统计，访问量统计和评论系统等。</p>
+<p>这一部分参考了: visugar.com这里面说的很详细了。</p>
+<ol>
+<li>SEO优化<br>推广是很麻烦的事情，怎么样别人才能知道我们呢，首先需要让搜索引擎收录你的这个网站，别人才能搜索的到。那么这就需要SEO优化了。</li>
+</ol>
+<p>SEO是由英文Search Engine Optimization缩写而来， 中文意译为“搜索引擎优化”。SEO是指通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化。<br>百度seo<br>刚建站的时候是没有搜索引擎收录我们的网站的。可以在搜索引擎中输入site:&lt;域名&gt;</p>
+<p>来查看一下。</p>
+<ol>
+<li>登录百度站长平台添加网站</li>
+</ol>
+<p>登录百度站长平台，在站点管理中添加你自己的网站。</p>
+<p>验证网站有三种方式：文件验证、HTML标签验证、CNAME验证。</p>
+<p>第三种方式最简单，只要将它提供给你的那个xxxxx使用CNAME解析到<a target="_blank" rel="noopener" href="http://xxx.baidu.com就可以了.也就是登录你的阿里云,把这个解析填进去就ok了./">http://xxx.baidu.com就可以了。也就是登录你的阿里云，把这个解析填进去就OK了。</a></p>
+<ol start="2">
+<li>提交链接</li>
+</ol>
+<p>我们需要使用npm自动生成网站的sitemap，然后将生成的sitemap提交到百度和其他搜索引擎</p>
+<p>npm install hexo-generator-sitemap –save<br>npm install hexo-generator-baidu-sitemap –save<br>这时候你需要在你的根目录下_config.xml中看看url有没有改成你自己的：</p>
+<p>重新部署后，就可以在public文件夹下看到生成的sitemap.xml和baidusitemap.xml了。</p>
+<p>然后就可以向百度提交你的站点地图了。</p>
+<p>这里建议使用自动提交。</p>
+<p>自动提交又分为三种：主动推送、自动推送、sitemap。</p>
+<p>可以三个一起提交不要紧，我选择的是后两种。</p>
+<p>自动推送：把百度生成的自动推送代码，放在主题文件/layout/common/head.ejs的适当位置，然后验证一下就可以了。<br>sitemap：把两个sitemap地址，提交上去，看到状态正常就OK了。<br>google的SEO</p>
+<p>流程一样，google更简单，而且收录更快，进入google站点地图，提交网站和sitemap.xml，就可以了。</p>
+<p>如果你这个域名在google这里出了问题，那你就提交 <a target="_blank" rel="noopener" href="http://yourname.github.io,这个链接,效果是一样的./">http://yourname.github.io，这个链接，效果是一样的。</a></p>
+<p>不出意外的话一天内google就能收录你的网站了。</p>
+<ol start="3">
+<li>添加百度统计</li>
+</ol>
+<p>百度统计可以在后台上看到你网站的访问数，浏览量，浏览链接分布等很重要的信息。所以添加百度统计能更有效的让你掌握你的网站情况。</p>
+<p>百度统计，注册一下，这里的账号好像和百度账号不是一起的。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
+    </nav>
+  
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2021-2022 XieZhiFeng
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
